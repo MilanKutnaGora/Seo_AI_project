@@ -1,4 +1,6 @@
-export const App = () => {
+import { TrpcProvider } from "./lib/trpc"
+
+export const AllIdeasPage = () => {
   const ideas = [
     {
       nick: 'cool-idea-nick-1',
@@ -38,6 +40,15 @@ export const App = () => {
     </div>
   )
 }
+
+export const App = () => {
+  return (
+    <TrpcProvider>
+      <AllIdeasPage />
+    </TrpcProvider>
+  )
+}
+
 
 // return (
 //   <div>

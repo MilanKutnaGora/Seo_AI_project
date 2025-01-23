@@ -16,4 +16,4 @@ export const trpcRouter = trpc.router({
   }),
 })
 
-export type trpcRouter = typeof trpcRouter
+export type TrpcRouter = typeof trpcRouter
