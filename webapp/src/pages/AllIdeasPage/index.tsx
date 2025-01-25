@@ -10,8 +10,8 @@ export const AllIdeasPage = () => {
   if (isError) {
     return <span>Error: {error.message}</span>
   }
-     
-    return (
+
+  return (
     <div>
       <h1>All Ideas</h1>
       {data?.ideas?.map((idea) => (
@@ -19,7 +19,7 @@ export const AllIdeasPage = () => {
           <h2>{idea.name}</h2>
           <p>{idea.description}</p>
         </div>
-        ))}
+      ))}
     </div>
-    )
-  }
+  )
+}
