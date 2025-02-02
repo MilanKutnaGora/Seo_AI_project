@@ -1,1 +1,2 @@
-pnpm types
+pnpm run types
+pnpm lint-staged
